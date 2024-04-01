@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    background-color: hsl(292, 42%, 14%);
+    font-family: "Work Sans";
+    min-height: 100vh;
+  font-family: font-family: "Work Sans", sans-serif;
+}
+.main{
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    margin: 30px 20% ;
+}
+.head{
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+    margin-bottom: 0.8rem;
+}
+.head img{
+    width: 3%;
+}
+.qa{
+padding-bottom: 0.2rem;
+}
+.questions{
+    background: inherit;
+  color:hsl(292, 42%, 14%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5rem;
+  position:relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+  text-align: left;
+  font-weight:600;
+}
+.questions:hover{
+    color:purple;
+  font-weight:700;
+}
+.btn-img{
+  position:absolute;
+  right:0.1%;
+}
+.plus, .minus{
+    background: inherit;
+    border: none;
+    width:70%;
+    cursor: pointer;
+}
+.minus{
+    display: none;
+}
+.answers{
+    font-size: 16px;
+    line-height: 1.5rem;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  color:hsl(292, 16%, 49%);
+  font-weight:400;
+}
+hr{
+    margin-top: 0.5rem;
+}
+.attribution{
+  margin-top:20px;
+  text-align: center;
+  color:white;
+}
+.attribution a{
+  color:white;
+  font-weight:600;
+}
+@media screen and (max-width: 480px) {
+  /* CSS styles for screens 480px or lower */
+  .main {
+    margin: 10px;
+    margin-top:20%;
+  }
+  .head img {
+    width: 5%;
+  }
+  .qa {
+    margin: 0.5rem 0;
+  }
+  .questions {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space between items */
+  }
+  .questions .btn-img {
+    margin-left: auto; /* Push the icon to the right */
+  }
+  .answers {
+    font-size: 14px;
+  }
+}
+
